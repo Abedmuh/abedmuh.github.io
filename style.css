@@ -1,8 +1,76 @@
 .jumbotron {
-  padding: 6rem 1rem;
+  padding: 10rem 1rem;
   background-color: #d8d8d8;
 }
 
 section {
   padding-top: 5rem;
+}
+
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl,
+#portfolio .container-xxl {
+  max-width: 1920px;
+  margin-bottom: 5rem;
+}
+#portfolio .container-fluid .card,
+#portfolio .container-sm .card,
+#portfolio .container-md .card,
+#portfolio .container-lg .card,
+#portfolio .container-xl .card,
+#portfolio .container-xxl .card {
+  position: relative;
+  display: block;
+  margin: 1rem;
+}
+#portfolio .container-fluid .card .card-caption,
+#portfolio .container-sm .card .card-caption,
+#portfolio .container-md .card .card-caption,
+#portfolio .container-lg .card .card-caption,
+#portfolio .container-xl .card .card-caption,
+#portfolio .container-xxl .card .card-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: #9e9e9e;
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio .container-fluid .card .card-caption .project-category,
+#portfolio .container-sm .card .card-caption .project-category,
+#portfolio .container-md .card .card-caption .project-category,
+#portfolio .container-lg .card .card-caption .project-category,
+#portfolio .container-xl .card .card-caption .project-category,
+#portfolio .container-xxl .card .card-caption .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .card .card-caption .project-name,
+#portfolio .container-sm .card .card-caption .project-name,
+#portfolio .container-md .card .card-caption .project-name,
+#portfolio .container-lg .card .card-caption .project-name,
+#portfolio .container-xl .card .card-caption .project-name,
+#portfolio .container-xxl .card .card-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .container-fluid .card:hover .card-caption,
+#portfolio .container-sm .card:hover .card-caption,
+#portfolio .container-md .card:hover .card-caption,
+#portfolio .container-lg .card:hover .card-caption,
+#portfolio .container-xl .card:hover .card-caption,
+#portfolio .container-xxl .card:hover .card-caption {
+  opacity: 1;
 }

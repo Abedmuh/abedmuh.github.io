@@ -8,6 +8,15 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -28,7 +37,10 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Me</a>
@@ -41,13 +53,13 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col text-start mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col text-start">
             <h1 class="display-5">Hai Saya Abdillah</h1>
             <p class="lead">ini latihan portofolio.</p>
           </div>
-          <div class="col">
+          <div class="col align-items-end">
             <img src="img/jeanne.jpg" alt="profile" width="600" />
           </div>
         </div>
@@ -58,16 +70,13 @@
     <!-- About -->
     <section id="about">
       <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
+        <h2 class="text-center mt-0">About</h2>
+        <hr class="divider" />
         <div class="row justify-content-center">
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-right" data-aos-duration="1500">
             <p>Saya muhammad</p>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5" data-aos="fade-left" data-aos-duration="1500">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, tenetur aliquam! Omnis praesentium explicabo odit nulla, iure beatae ipsam, a deserunt quia quidem officia provident.</p>
           </div>
         </div>
@@ -75,38 +84,80 @@
     </section>
     <!-- About End -->
 
+    <!-- Skills -->
+    <section class="page-section" id="skills">
+      <div class="container px-4 px-lg-5">
+        <h2 class="text-center mt-0">Skills</h2>
+        <hr class="divider" />
+        <div class="row gx-4 gx-lg-5">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Sturdy Themes</h3>
+              <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Up to Date</h3>
+              <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Ready to Publish</h3>
+              <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="mt-5">
+              <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+              <h3 class="h4 mb-2">Made with Love</h3>
+              <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills End -->
+
     <!-- Projects -->
-    <section id="projects">
-      <div class="container">
+    <section id="portfolio">
+      <div class="container-fluid p-0">
         <div class="row text-center">
           <div class="col">
             <h2>My Projects</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/arduino.jpg" class="card-img-top" alt="Projects 1" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <div class="row g-0">
+          <div class="col-lg-4 col-sm-6">
+            <a class="card" href="https://github.com/Abedmuh" title="Project Name" data-aos="zoom-in">
+              <img class="img-fluid" src="img/arduino.jpg" alt="..." />
+              <div class="card-caption">
+                <div class="project-category text-white-50">Arduino</div>
+                <div class="project-name">Delayed Relay</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/arduino2.jpg" class="card-img-top" alt="Projects 2" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-sm-6">
+            <a class="card" href="https://github.com/Abedmuh" title="Project Name" data-aos="zoom-in" data-aos-delay="100">
+              <img class="img-fluid" src="img/arduino2.jpg" alt="..." />
+              <div class="card-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
               </div>
-            </div>
+            </a>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/arduino3.jpg" class="card-img-top" alt="Projects 3" />
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="col-lg-4 col-sm-6">
+            <a class="card" href="https://github.com/Abedmuh" title="Project Name" data-aos="zoom-in" data-aos-delay="200">
+              <img class="img-fluid" src="img/arduino3.jpg" alt="..." />
+              <div class="card-caption">
+                <div class="project-category text-white-50">Category</div>
+                <div class="project-name">Project Name</div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -123,20 +174,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+              <strong>Thank you!</strong> Pesan anda saya terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
-                <label for="Name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="Name" aria-describedby="Name" />
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="Name" name="nama" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="email" />
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="pesan" rows="3"></textarea>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-primary btn-kirim" id="kirim">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </form>
           </div>
         </div>
@@ -149,6 +208,52 @@
       <p>test</p>
     </footer>
     <!-- Footer End -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
+      });
+    </script>
+
+    <!--GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script>
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0 });
+    </script>
+
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbw4liEwIsed3qtliyTyxfpzHHBtZA7LNXN_H8F9xoo7I9sKzD97GX3ibymT5bm840MZug/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnkirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        btnLoading.classList.toggle("d-none");
+        btnkirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnkirim.classList.remove("d-none");
+            myAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => {
+            btnLoading.classList.toggle("d-none");
+            btnkirim.classList.toggle("d-none");
+            console.error("Error!", error.message);
+          });
+      });
+    </script>
   </body>
 </html>
